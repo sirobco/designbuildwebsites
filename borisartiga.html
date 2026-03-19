@@ -26,7 +26,7 @@ a{text-decoration:none;color:inherit}
 
 /* HEADER */
 header{background:var(--navy);border-bottom:1px solid var(--border);padding:20px 48px;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:100}
-.logo img{height:28px;width:auto;display:block}
+.logo img{height:26px;width:auto;display:block}
 .btn-blue{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:var(--white);font-family:'Montserrat',sans-serif;font-size:13px;font-weight:500;padding:10px 22px;border-radius:6px;transition:opacity 0.15s;white-space:nowrap}
 .btn-blue:hover{opacity:0.88}
 .btn-ghost{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;font-weight:500;padding:10px 22px;border:1px solid var(--border);border-radius:6px;transition:color 0.15s,border-color 0.15s}
@@ -176,7 +176,8 @@ footer{background:#080d16;padding:24px 48px;display:flex;align-items:center;just
   <a href="https://borisartiga.com" target="_blank" class="footer-logo">
     <img src="https://borisartiga.com/wp-content/uploads/2024/08/boris-artiga-logo-6-W.png" alt="Boris Artiga">
   </a>
-  <div class="footer-right">© 2026 Boris Artiga</div>
+  <div class="footer-right">© <span id="yr"></span> Boris Artiga</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
 </footer>
 
 </body>
